@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/* DEFAULTS */
+
+html{
+    font-family: 'Nunito', Arial;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+body{
+    font-size: 2em;
+    position: relative;
+    padding-bottom: 2.7em;
+    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    width: 1220px;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+button{
+    color: #fff;
+    font-size: 0.8em;
+    background-color: #ffbe51;
+    border: none;
+    height: 2em;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #efae41;
+}
+
+img{
+    user-select: none;
+}
+
+#bg{
+    background-color: #AAA;
+    background-size: cover;
+    width: 264px;
+    height: 264px;
+}
+
+section{
+    padding: 4em 8vw;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 800;
+    color: #ffc107;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 700;
+    color: #000;
+}
+
+h3{
+    font-size: 1.35em;
+    font-weight: 700;
+    color: #757575;
+}
+
+h4{
+    margin: 0.5em 0;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #000;
+}
+
+p{
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+a{
+    display: contents;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* HEADER */
+
+header{
+    font-weight: 800;
+    user-select: none;
+    background-color: #ffbe51;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+header img{
+    padding: 0.6em;
+    max-width: 12.8em;
+}
+
+header ul{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+    padding: 0.2em;
+    margin: 0.5em 0;
+}
+
+header #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* FOOTER */
+
+footer{
+    color: #000;
+    background-color: #ffbe51;
+}
+
+footer a{
+    color: #000;
+}
+
+footer a:hover{
+    color: #00D;
+    font-weight: 700;
+}
+
+footer #copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #c4c4c4;
+
+    user-select: none;
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .container{
+    padding: 2em 0;
+}
+
+footer #info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+footer #info-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+footer #info-contact{
+    width: 280px;
+}
+
+footer img{
+    width: 13.3em;
+    max-width: 35vw;
+    margin-bottom: auto;
+}
+
+footer iframe{
+    margin: 25px auto;
+    max-width: 466px;
+    width: 100%;
+}
+
+/* INDEX */
+
+.split{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+h4.price{
+    font-weight: 400;
+}
+
+.split #text{
+    max-width: 100%;
+}
+
+.split img,
+.split #text{
+    width: 544px;
+    max-width: 100%;
+    min-width: 250px;
+}
+
+.split #img{
+    display: inline-flex;
+    margin: auto 10px;
+    max-width: 100%;
+}
+
+#index .split #img{
+    justify-content: flex-end;
+}
+
+#index #options{
+    background-color: #e5e5e5;
+}
+
+#index section p{
+    color: #757575;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+#index h1{
+    color: #757575;
+}
+
+#index h2{
+    text-align: center;
+    font-weight: 400;
+}
+
+#index #options .list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+#index #options article{
+    display: inline-flex;
+    justify-content: center;
+    padding: 16px;
+    width: 100%;
+}
+
+#index #options article a{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#index #options article:hover{
+    box-shadow: 0px 0px 10px black;
+    border-radius: 8px;
+}
+
+/* SERVICES */
+
+#services article{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 75px 0;
+}
+
+#services article .price{
+    font-weight: 400;
+}
+
+#services article #thumb{
+    padding: 0 5%;
+}
+
+#services article #bg{
+    background-color: #e5e5e5;
+    width: 20vw;
+    height: 20vw;
+    max-width: 264px;
+    max-height: 264px;
+}
+
+#services article #pos{
+    max-width: 100%;
+}
+
+#services article h2{
+    margin-top: 0;
+}
+
+#services h1{
+    text-align: center;
+}
+
+#services section button{
+    width: 6em;
+    max-width: 100%;
+}
+
+/* CONTACT */
+
+#contact p{
+    color: #000;
+    font-size: 0.9em;
+}
+
+#contact section{
+    padding: 4em 5vw;
+}
+
+#contact #send-form{
+    width: 450px;
+    max-width: 100%;
+    margin: 0 3vw;
+}
+
+#contact #location iframe{
+    width: 450px;
+    max-width: 100%;
+}
+
+#contact .split{
+    align-items: flex-end;
+}
+
+#contact form input,
+#contact form textarea{
+    padding: 1% 4%;
+    resize: none;
+    width: 450px;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+#contact form textarea{
+    height: 200px;
+    padding: 3% 4%;
+}
+
+/* SINGUP */
+
+#signup .split{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#signup #singup-form{
+    display: flex;
+    justify-content: right;
+    max-width: 100%;
+}
+
+#signup #singup-img{
+    margin: 30px auto;
+    width: 40%;
+}
+
+#signup #singup-img img{
+    width: 500px;
+    max-width: 100%;
+}
+
+#signup form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 15px #000;
+    padding: 25px;
+    width: 375px;
+    min-width: 25%;
+}
+
+#signup section{
+    padding: 50px 0;
+}
+
+#signup form #input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 75%;
+}
+
+#signup #input input{
+    padding: 5px;
+    margin: 8px 0;
+}
+
+#signup #input button{
+    margin: 15px 0;
+}
+
+/* LOGIN */
+
+#signup #singup-form p a{
+    color: #000;
+    font-weight: 800;
+    font-size: 0.8em;
+}
+
+#signup #singup-form p{
+    text-align: center;
+}
+
+@media (max-width: 970px){
+    #index .split{
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    #index section{
+        font-size: 3.1vw;
+    }
+
+    #index #options{
+        font-size: 2rem;
+    }
+
+    #index #options article #bg{
+        width: 200px;
+        height: 200px;
+    }
+
+    #index #options article #price{
+        font-size: 0.5em;
+    }
+
+    #services article{
+        font-size: 0.75em;
+        padding: 2vw 0;
+    }
+
+    #services article h2{
+        font-size: 1.5em;
+    }
+
+    #services article #bg{
+        width: 208px;
+        height: 208px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    #contact .split{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #contact #send-form{
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 875px){
+    body{
+        padding-bottom: 1em;
+    }
+
+    footer #copyright{
+        font-size: 0.7em;
+    }
+
+    footer #info{
+        flex-wrap: wrap;
+    }
+
+    header{
+        font-size: 0.75em;
+    }
+
+    header #header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header img{
+        padding: 0;
+        margin: 0 100%;
+    }
+
+    #index #options article #bg{
+        width: 120px;
+        height: 120px;
+    }
+
+    #services article{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #services article #thumb{
+        padding: 25px 0;
+    }
+
+    #signup .split{
+        position: relative;
+    }
+
+    #signup #singup-img{
+        position: absolute;
+        left: -13%;
+        z-index: -2;
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px){
+    footer #info-img{
+        display: none;
+    }
+
+    footer #info{
+        justify-content: center;
+        text-align: center;
+    }
+
+    header{
+        font-size: 0.6em;
+    }
+
+    #index #options .list{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #index #options article{
+        justify-content: flex-start;
+    }
+
+    #index #options article a{
+        flex-direction: row;
+        align-content: center;
+    }
+
+    #index #options article #price{
+        padding: 0 15px;
+        font-size: 1.2rem;
+    }
+
+    #services article h2{
+        font-size: 1.2em;
+    }
+
+    #services article #bg{
+        width: 128px;
+        height: 128px;
+    }
+
+    #signup form h1{
+        font-size: 1.7em;
+    }
+
+    #signup #singup-img{
+        display: none;
+    }
+}
